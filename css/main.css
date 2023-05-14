@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Azeret Mono";
+}
+
+.container {
+  width: 68%;
+  height: 100%;
+  margin: 0 auto;
+  margin-top: 150px;
+}
+
+.timer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.timer__block {
+  width: 150px;
+}
+.timer .time {
+  text-align: center;
+  background-color: #2987be;
+  color: #fff;
+  font-size: 90px;
+  height: 130px;
+  line-height: 140px;
+}
+.timer .title {
+  background-color: #1059b8;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  text-align: center;
+  color: #fff;
+  padding: 5px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 130px;
+}
+.buttons .button {
+  cursor: pointer;
+  width: 180px;
+  padding: 10px;
+  font-size: 15px;
+  border: none;
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+}
+.buttons .button.start, .buttons .button.stop {
+  color: #2987be;
+}
+.buttons .button.start:hover, .buttons .button.stop:hover {
+  background-color: #1059b8;
+  color: white;
+}
+.buttons .button.pause:hover {
+  color: #fff;
+  background-color: rgb(186, 111, 240);
+}
+.buttons .button.new:disabled {
+  text-decoration: line-through;
+  cursor: default;
+}
+
+.results__block {
+  position: absolute;
+  left: 15px;
+  bottom: -5px;
+  width: 300px;
+  padding: 10px;
+  border: 2px solid #2987be;
+  color: #2987be;
+  font-size: 15px;
+  border-bottom: none;
+  text-align: center;
+}
+.results__block .results__info {
+  margin: 10px 0;
+}
+
+.reset__block {
+  position: absolute;
+  right: 15px;
+  bottom: 0;
+  width: 180px;
+}
+.reset__block .reset {
+  cursor: pointer;
+  border: none;
+  width: 180px;
+  padding: 10px;
+  border-radius: 10px;
+}/*# sourceMappingURL=main.css.map */
